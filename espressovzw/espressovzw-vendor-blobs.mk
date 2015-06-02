@@ -17,6 +17,7 @@
 PRODUCT_COPY_FILES += \
     vendor/samsung/espressovzw/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/samsung/espressovzw/proprietary/bin/mpdecision:system/bin/mpdecision \
+    vendor/samsung/espressovzw/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/samsung/espressovzw/proprietary/bin/thermald:system/bin/thermald \
     vendor/samsung/espressovzw/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
     vendor/samsung/espressovzw/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
@@ -55,7 +56,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/espressovzw/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/samsung/espressovzw/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/samsung/espressovzw/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
-    vendor/samsung/espressovzw/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+    vendor/samsung/espressovzw/proprietary/lib/libqdi.so:system/lib/libqdi.so \
+    vendor/samsung/espressovzw/proprietary/lib/libqdp.so:system/lib/libqdp.so \
+    vendor/samsung/espressovzw/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
     vendor/samsung/espressovzw/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/samsung/espressovzw/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
     vendor/samsung/espressovzw/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
@@ -63,39 +66,42 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/espressovzw/proprietary/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
     vendor/samsung/espressovzw/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/samsung/espressovzw/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
+    vendor/samsung/espressovzw/proprietary/lib/libloc_ext.so:system/lib/libloc_ext.so \
     vendor/samsung/espressovzw/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
-    vendor/samsung/espressovzw/proprietary/bin/efsks:system/bin/efsks \
-    vendor/samsung/espressovzw/proprietary/bin/ks:system/bin/ks \
-    vendor/samsung/espressovzw/proprietary/bin/qcks:system/bin/qcks \
     vendor/samsung/espressovzw/proprietary/bin/qmiproxy:system/bin/qmiproxy \
     vendor/samsung/espressovzw/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/samsung/espressovzw/proprietary/bin/radish:system/bin/radish \
     vendor/samsung/espressovzw/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/espressovzw/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+    vendor/samsung/espressovzw/proprietary/bin/sec-ril:system/bin/sec-ril \
     vendor/samsung/espressovzw/proprietary/bin/geomagneticd:system/bin/geomagneticd \
     vendor/samsung/espressovzw/proprietary/bin/orientationd:system/bin/orientationd \
     vendor/samsung/espressovzw/proprietary/lib/libatparser.so:system/lib/libatparser.so \
     vendor/samsung/espressovzw/proprietary/lib/libcordon.so:system/lib/libcordon.so \
+    vendor/samsung/espressovzw/proprietary/lib/libdiag.so:system/lib/libdiag.so \
+    vendor/samsung/espressovzw/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
+    vendor/samsung/espressovzw/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
     vendor/samsung/espressovzw/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
-    vendor/samsung/espressovzw/proprietary/lib/libmagnet.so:system/lib/liblibmagnet.so \
+    vendor/samsung/espressovzw/proprietary/lib/libidl.so:system/lib/libidl.so \
+    vendor/samsung/espressovzw/proprietary/lib/libmagnet.so:system/lib/libmagnet.so \
+    vendor/samsung/espressovzw/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
     vendor/samsung/espressovzw/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
+    vendor/samsung/espressovzw/proprietary/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
+    vendor/samsung/espressovzw/proprietary/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
     vendor/samsung/espressovzw/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
+    vendor/samsung/espressovzw/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     vendor/samsung/espressovzw/proprietary/lib/libril.so:system/lib/libril.so \
-    vendor/samsung/espressovzw/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/samsung/espressovzw/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     vendor/samsung/espressovzw/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    vendor/samsung/espressovzw/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
+    vendor/samsung/espressovzw/proprietary/lib/libqdi.so:system/lib/libqdi.so \
+    vendor/samsung/espressovzw/proprietary/lib/libqdp.so:system/lib/libqdp.so \
+    vendor/samsung/espressovzw/proprietary/lib/libqmi.so:system/lib/libqmi.so \
+    vendor/samsung/espressovzw/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
+    vendor/samsung/espressovzw/proprietary/lib/libqmi_cci.so:system/lib/libqmi_cci.so \
+    vendor/samsung/espressovzw/proprietary/lib/libqmi_csi.so:system/lib/libqmi_csi.so \
+    vendor/samsung/espressovzw/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
     vendor/samsung/espressovzw/proprietary/lib/libxml.so:system/lib/libxml.so \
-    vendor/samsung/espressovzw/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
-    vendor/samsung/espressovzw/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
-    vendor/samsung/espressovzw/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-    vendor/samsung/espressovzw/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
-    vendor/samsung/espressovzw/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
-    vendor/samsung/espressovzw/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
-    vendor/samsung/espressovzw/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
-    vendor/samsung/espressovzw/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
-    vendor/samsung/espressovzw/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
-    vendor/samsung/espressovzw/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
-    vendor/samsung/espressovzw/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
-    vendor/samsung/espressovzw/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/samsung/espressovzw/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
     vendor/samsung/espressovzw/proprietary/lib/libakmd.so:system/lib/libakmd.so \
     vendor/samsung/espressovzw/proprietary/lib/libinvensense_hal.so:system/lib/libinvensense_hal.so \
